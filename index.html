@@ -55,18 +55,19 @@
 				}
 				var rand = Math.random();
 				var bg_path = '';
+				console.log(rand);
 				if (rand < .33) {
 					bg_path = 'images/bg_forest.jpg';
 				} else if (rand < .66) {
-					bg_path = 'images/bg_lagune69.jpg';
+					bg_path = 'images/bg_laguna69.jpg';
 				} else {
 					bg_path = 'images/bg_hauraz.jpg';
 				}
 
-				background-image: url("assets/css/images/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url(bg_path);
-				background-image: url("assets/css/images/overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url(bg_path);
-				background-image: url("assets/css/images/overlay.png"), -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url(bg_path);
-				background-image: url("assets/css/images/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url(bg_path);
+				document.body.style.backgroundImage = "url('assets/css/images/overlay.png'), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url(" + bg_path + ")";
+				document.body.style.backgroundImage =  "url('assets/css/images/overlay.png'), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url(" + bg_path + ")";
+				document.body.style.backgroundImage =  "url('assets/css/images/overlay.png'), -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url(" + bg_path + ")";
+				document.body.style.backgroundImage =  "url('assets/css/images/overlay.png'), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url(" + bg_path + ")";
 			</script>
 
 	</body>
