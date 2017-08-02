@@ -27,7 +27,7 @@
 							<h1>Eric Hemphill</h1>
 							<p>Computer Science Student</p>
 						</header>
-									
+
 						<footer>
 							<ul class="icons">
 								<li><a href="HemphillEricResumeAU17.pdf" target="_blank" class="fa-file-pdf-o">Resume</a></li>
@@ -52,6 +52,14 @@
 				if ('addEventListener' in window) {
 					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
 					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+				var rand = Math.random();
+				if (rand < .33) {
+					document.body.style.backgroundImage = "url('bg_forest.jpg')";
+				} else if (rand < .66) {
+					document.body.style.backgroundImage = "url('bg_hauraz.jpg')";
+				} else {
+					document.body.style.backgroundImage = "url('bg_laguna69.jpg')";
 				}
 			</script>
 
